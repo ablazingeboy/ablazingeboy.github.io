@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <title>Project Log: Numpet | I Need More Coffee</title>
+
+  <meta charset="UTF-8">
+  <meta name="language" content="en">
+  <meta name="description" content="A simple 4-button Arduino-based keypad for data entry">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  
+  
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Project Log: Numpet" />
+  <meta name="twitter:description" content="A simple 4-button Arduino-based keypad for data entry"/>
+  <meta name="twitter:site" content="https://twitter.com/ablazingeboy" />
+  <meta name="twitter:creator" content="https://twitter.com/ablazingeboy" />
+  
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+  
+  
+    
+ 
+  
+  
+  
+  
+  
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/post.min.86d1effd4c412b85ac13db53a90c473a0f256f789b821e131125c9aa25cb6a6d.css" integrity="sha256-htHv/UxBK4WsE9tTqQxHOg8lb3ibgh4TESXJqiXLam0="/>
+  
+    
+    <link type="text/css" rel="stylesheet" href="/css/custom.min.e866e884c0a3a2c0f81f9e0378e3132596ada4cf8a3735522ab37dfe8f2b639d.css" integrity="sha256-6GbohMCjosD4H54DeOMTJZatpM&#43;KNzVSKrN9/o8rY50="/>
+  
+  
+   
+   
+    
+
+<script type="application/ld+json">
+  
+    {
+      "@context" : "http://schema.org",
+      "@type" : "BlogPosting",
+      "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/ineedmore.coffee\/"
+      },
+      "articleSection" : "blog",
+      "name" : "Project Log: Numpet",
+      "headline" : "Project Log: Numpet",
+      "description" : "A simple 4-button Arduino-based keypad for data entry",
+      "inLanguage" : "en-US",
+      "author" : "",
+      "creator" : "",
+      "publisher": "",
+      "accountablePerson" : "",
+      "copyrightHolder" : "",
+      "copyrightYear" : "2022",
+      "datePublished": "2022-01-05 14:37:20 -0500 -0500",
+      "dateModified" : "2022-01-05 14:37:20 -0500 -0500",
+      "url" : "https:\/\/ineedmore.coffee\/blog\/numpet\/",
+      "wordCount" : "1147",
+      "keywords" : ["Blog"]
+    }
+  
+  </script>
+</head>
+
+<body>
+  <div class="burger__container">
+  <div class="burger" aria-controls="navigation" aria-label="Menu">
+    <div class="burger__meat burger__meat--1"></div>
+    <div class="burger__meat burger__meat--2"></div>
+    <div class="burger__meat burger__meat--3"></div>
+  </div>
+</div>
+ 
+
+  <nav class="nav" id="navigation">
+  <ul class="nav__list">
+    
+    
+      <li>
+        <a  href="/">about</a>
+      </li>
+    
+      <li>
+        <a  class="active"
+         href="/blog">blog</a>
+      </li>
+    
+  </ul>
+</nav>
+
+
+  <main>
+    
+    
+
+    <div class="flex-wrapper">
+      <div class="post__container">
+        <div class="post">
+          <header class="post__header">
+            <h1 id="post__title">Project Log: Numpet</h1>
+            <time datetime="2022-01-05 14:37:20 -0500 -0500" class="post__date">Jan 5 2022</time> 
+          </header>
+          <article class="post__content">
+              
+<h2 id="description">Description<a class="anchor" href="#description">#</a></h2>
+<p>The Numpet is a 4-button &ldquo;macropad&rdquo; that uses binary to replicate the featureset of a full number pad. This is accomplished by having each key combination read as a binary number, which then is converted into it&rsquo;s decimal counterpart and sent to the computer as a keyboard input (e. g. Pressing the 1st and 4th button represents 1001 in binary, translating to the number 9). As 4 buttons can represent up to the number 15 in binary, numbers 1-9 output numbers 1-9, number 10 outputs 0 (this is to account for the fact that 0000 is the resting state of the device), and numbers 11-15 represent other functions such as Enter and Backspace.</p>
+<h2 id="inspiration">Inspiration<a class="anchor" href="#inspiration">#</a></h2>
+<p>The inspiration for this project came from my need for a numpad at work. While shopping for one, I had the random musing that 4 keys would be all that&rsquo;s necessary to be able to enter any number necessary, as well as replicate other functions of a numpad. I then related that to binary, and realized binary was an easy methodology to use for the key combinations.</p>
+<p>The name &ldquo;Numpet&rdquo; is a portmanteau of &ldquo;number trumpet&rdquo;, as the 4 buttons reminded me of a trumpet.</p>
+<h2 id="prototyping">Prototyping<a class="anchor" href="#prototyping">#</a></h2>
+<p>The entirety of my prototyping was done using a $14.99 <a href="https://www.microcenter.com/product/617247/inland-pro-micro-starter-kit" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Inland Pro Micro Starter Kit</a> from Micro Center. The kit included, among other things, an Arduino Pro Micro clone, a small breadboard, and hookup wires. This was all I needed to be able to put together the initial prototype.</p>
+<p><img src="/images/numpetproto.jpg" alt=""></p>
+<p><img src="/images/numpetproto_bb.png" alt=""></p>
+<h2 id="build">Build<a class="anchor" href="#build">#</a></h2>
+<p>For the actual build, I decided to use an Adafruit Perma-Proto breadboard as the base board, with some tactile buttons I had picked up for a previous project, and an Altoids tin as the enclosure. Two standoffs were used to secure the board in place, with 4 more standoffs at the corners to both support the corners of the board on the inside and act as &ldquo;feet&rdquo; on the bottom.</p>
+<h3 id="cost-breakdown">Cost Breakdown<a class="anchor" href="#cost-breakdown">#</a></h3>
+<ul>
+<li>
+<p>~$9.99 - 1x <a href="https://www.microcenter.com/product/613815/inland-pro-micro-development-board-arduino-compatible" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Inland Pro Micro</a></p>
+</li>
+<li>
+<p>~$4.20 - 1x <a href="https://www.adafruit.com/product/571" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Adafruit Half-Size Perma-Proto Board</a></p>
+</li>
+<li>
+<p>~$1.50 - 3x <a href="https://www.microcenter.com/product/427684/tactile-button-assortment" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>Generic Tactile Buttons</a></p>
+</li>
+<li>
+<p>~$1.90 - 1x Peppermint Altoids</p>
+</li>
+</ul>
+<p>Total Estimated Cost: $16.69 (plus change for wires and standoffs)</p>
+<h3 id="assembly">Assembly<a class="anchor" href="#assembly">#</a></h3>
+<p>Wiring it all up was very simple. I used the internal pullup resistor, thus all I needed to do was connect one lead of each button to different pins on the Pro Micro, and then connect the other lead to the ground rail on the breadboard, which was then connected to a ground pin on the microcontroller. The breadboard ended up inhibiting by wiring however, as due to the internal connections I had to clip the bottom pins of the buttons (hence the hot glue at the bottom of each button). In addition, it forced me to orient the microcontroller horizontally, when I would have preferred to orient it so that the microUSB port faces out the back.</p>
+<h3 id="images">Images<a class="anchor" href="#images">#</a></h3>
+<p><img src="/images/numpetfinal1.jpg" alt="">
+<img src="/images/numpetfinal2.jpg" alt="">
+<img src="/images/numpetfinal3.jpg" alt=""></p>
+<h3 id="code">Code<a class="anchor" href="#code">#</a></h3>
+<pre><code>#include &quot;Keyboard.h&quot; // Includes the Keyboard library so we can emulate a keyboard
+
+// Sets the pins corresponding to each button
+const int BUTTON1 = 5;
+const int BUTTON2 = 6;
+const int BUTTON4 = 3;
+const int BUTTON8 = 2;    
+
+// Sets the initial state of all buttons to 0
+int BUTTON1State = 0;
+int BUTTON2State = 0;
+int BUTTON4State = 0;
+int BUTTON8State = 0;      
+
+// Sets parameters for debounce, with a delay of 50 milliseconds
+unsigned long lastDebounceTime = 0;
+unsigned long debounceDelay = 50;
+
+void setup() { 
+  // Sets the button pins as inputs using the internal pullup resistor
+  pinMode(BUTTON1, INPUT_PULLUP);
+  pinMode(BUTTON2, INPUT_PULLUP);
+  pinMode(BUTTON4, INPUT_PULLUP);
+  pinMode(BUTTON8, INPUT_PULLUP); 
+
+  // Starts keyboard emulation
+  Keyboard.begin();
+}
+
+
+void loop(){
+  // Reads the state of each button
+  BUTTON8State = digitalRead(BUTTON8);
+  BUTTON4State = digitalRead(BUTTON4);
+  BUTTON2State = digitalRead(BUTTON2);
+  BUTTON1State = digitalRead(BUTTON1);
+
+  // Sets time of first input
+  if (BUTTON8State + BUTTON4State + BUTTON2State + BUTTON1State &lt; 4) {
+    lastDebounceTime = millis();
+  }
+
+  // Only runs code if buttons continue to be pressed for 50 milliseconds
+  if((millis() - lastDebounceTime) &gt; debounceDelay) {
+    if (BUTTON8State + BUTTON4State + BUTTON2State + BUTTON1State &lt; 4) {
+    // Reads input, recognizing any switch pressed between two rest states
+    int ones = 0;
+    int twos = 0;
+    int fours = 0;
+    int eights = 0;
+    while(BUTTON8State + BUTTON4State + BUTTON2State + BUTTON1State &lt; 4) {
+        BUTTON8State = digitalRead(BUTTON8);
+        BUTTON4State = digitalRead(BUTTON4);
+        BUTTON2State = digitalRead(BUTTON2);
+        BUTTON1State = digitalRead(BUTTON1);
+        if(BUTTON8State &lt; 1) {
+          eights = 1;
+        }
+        if(BUTTON4State &lt; 1) {
+          fours = 1;
+        }
+        if(BUTTON2State &lt; 1) {
+          twos = 1;
+        }
+        if(BUTTON1State &lt; 1) {
+          ones = 1;
+        }
+      }
+      // Uses binary to determine what number was intended
+      int num = (eights * 8) + (fours * 4) + (twos * 2) + ones;
+      if(num &lt;= 9) {
+        Keyboard.print(num);
+      } else if(num == 10) {
+        Keyboard.print(0);
+      } else if(num == 11) {
+        Keyboard.print(&quot;boop&quot;); //placeholder
+      } else if(num == 12) {
+        Keyboard.write(KEY_BACKSPACE);
+      } else if(num == 13) {
+        Keyboard.print(&quot;boop&quot;); //placeholder
+      } else if(num == 14) {
+        Keyboard.print(&quot;boop&quot;); //placeholder
+      } else if(num == 15) {
+        Keyboard.write(KEY_RETURN);
+      }
+      delay(20);
+    }
+  }
+}
+</code></pre>
+<p>The code is relatively simple, reading button input and translating it into a number using binary syntax. In order to account for the fact that the tactile buttons make pressing key combinations difficult, the code is written so that after a button is triggered, any inputs read until all buttons are released are recognized. Therefore, this input sequence would produce 96 (<code>1</code> represents a pressed button):</p>
+<pre><code>0000
+1000
+1001
+0000
+0110
+0010
+0000
+</code></pre>
+<p>This allows the board to be more forgiving when it comes to key presses, but means that holding down a button combination will not repeat the key input, a feature seen on regular keyboards. While unnecessary for this project&rsquo;s purpose, it could be accommodated in future revisions of the code.</p>
+<h2 id="final-thoughts">Final Thoughts<a class="anchor" href="#final-thoughts">#</a></h2>
+<p>While this ended up being a great first project, and I learned a lot about the basics of working with an Arduino/Arduino-Compatible microcontroller, there were a number of changes I would make if I were able to redo this project:</p>
+<ul>
+<li>
+<p>I would have gone with a perfboard instead of a breadboard, as the built-in traces ended up limiting my options for board layout.</p>
+</li>
+<li>
+<p>I would have used a smaller and cheaper microcontroller as the Pro Micro was overkill for this project. I planned to use a Trinket for the final project, however I accidentally picked up the Trinket 3v instead of the M0, and the 3v was not suitable for the project.</p>
+</li>
+<li>
+<p>I would have went with different buttons. The tactile buttons ended up requiring a lot of force to actuate, and thus are somewhat inefficient for the &ldquo;typing&rdquo; style the Numpet requires. I would potentially like to reimplement this later using a <a href="https://www.adafruit.com/product/4980" 
+  
+   target="_blank" rel="noreferrer noopener" 
+>NeoKey 1x4</a> with 4 key switches for a better typing experience. Mouse switches may also be an interesting way to implement a lower profile version.</p>
+</li>
+</ul>
+<p>Overall this was an extremely valuable learning experience, and I regard it as a success.</p>
+
+
+              
+          </article>
+          
+
+<ul class="tags__list">
+    
+    <li class="tag__item">
+        <a class="tag__link" href="https://ineedmore.coffee/tags/projects/">projects</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://ineedmore.coffee/tags/electronics/">electronics</a>
+    </li>
+    <li class="tag__item">
+        <a class="tag__link" href="https://ineedmore.coffee/tags/arduino/">arduino</a>
+    </li></ul>
+
+ <div class="pagination">
+  
+    <a class="pagination__item" href="https://ineedmore.coffee/blog/tgshutdown/">
+        <span class="pagination__label">Previous Post</span>
+        <span class="pagination__title">My Thoughts on the Sunsetting of TeenagersGaming</span>
+    </a>
+  
+
+  
+</div>
+
+          
+          <footer class="post__footer">
+            
+
+
+<div class="social-icons">
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Github"
+        href="https://github.com/ablazingeboy"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ineedmore.coffee/svg/github.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Email"
+        href="mailto:ablazingeboy@protonmail.com"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ineedmore.coffee/svg/email.svg')"></div>
+      </a>
+    
+  
+     
+    
+      <a
+        class="social-icons__link"
+        title="Twitter"
+        href="https://twitter.com/ablazingeboy"
+        target="_blank"
+        rel="me noopener"
+      >
+        <div class="social-icons__icon" style="background-image: url('https://ineedmore.coffee/svg/twitter.svg')"></div>
+      </a>
+    
+     
+</div>
+
+            <p>© ablazingeboy 2022</p>
+          </footer>
+          </div>
+      </div>
+      
+      <div class="toc-container">
+          
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#description">Description</a></li>
+    <li><a href="#inspiration">Inspiration</a></li>
+    <li><a href="#prototyping">Prototyping</a></li>
+    <li><a href="#build">Build</a>
+      <ul>
+        <li><a href="#cost-breakdown">Cost Breakdown</a></li>
+        <li><a href="#assembly">Assembly</a></li>
+        <li><a href="#images">Images</a></li>
+        <li><a href="#code">Code</a></li>
+      </ul>
+    </li>
+    <li><a href="#final-thoughts">Final Thoughts</a></li>
+  </ul>
+</nav>
+      </div>
+      
+    </div>
+    
+
+  </main>
+
+   
+
+  
+  <script src="/js/index.min.575dda8d49ee02639942c63564273e6da972ab531dda26a08800bdcb477cbd7f.js" integrity="sha256-V13ajUnuAmOZQsY1ZCc&#43;balyq1Md2iagiAC9y0d8vX8=" crossorigin="anonymous"></script>
+  
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/components/prism-core.min.js"></script>
+
+  
+  <script src="https://unpkg.com/prismjs@1.20.0/plugins/autoloader/prism-autoloader.min.js"
+    data-autoloader-path="https://unpkg.com/prismjs@1.20.0/components/"></script>
+
+  
+    <script src="/js/table-of-contents.js"></script>
+  
+
+
+</body>
+
+</html>
