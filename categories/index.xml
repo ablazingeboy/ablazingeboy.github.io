@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on I Need More Coffee</title>
-    <link>https://ineedmore.coffee/categories/</link>
-    <description>Recent content in Categories on I Need More Coffee</description>
+    <title>Categories on ABlazingEBoy&#39;s Archive</title>
+    <link>https://ablazingeboy.github.io/categories/</link>
+    <description>Recent content in Categories on ABlazingEBoy&#39;s Archive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>© ablazingeboy {year}</copyright><atom:link href="https://ineedmore.coffee/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>© ablazingeboy {year}</copyright><atom:link href="https://ablazingeboy.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

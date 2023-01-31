@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>electronics on I Need More Coffee</title>
-    <link>https://ineedmore.coffee/tags/electronics/</link>
-    <description>Recent content in electronics on I Need More Coffee</description>
+    <title>electronics on ABlazingEBoy&#39;s Archive</title>
+    <link>https://ablazingeboy.github.io/tags/electronics/</link>
+    <description>Recent content in electronics on ABlazingEBoy&#39;s Archive</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>© ablazingeboy {year}</copyright>
-    <lastBuildDate>Wed, 05 Jan 2022 14:37:20 -0500</lastBuildDate><atom:link href="https://ineedmore.coffee/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 05 Jan 2022 14:37:20 -0500</lastBuildDate><atom:link href="https://ablazingeboy.github.io/tags/electronics/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Project Log: Numpet</title>
-      <link>https://ineedmore.coffee/blog/numpet/</link>
+      <link>https://ablazingeboy.github.io/blog/numpet/</link>
       <pubDate>Wed, 05 Jan 2022 14:37:20 -0500</pubDate>
       
-      <guid>https://ineedmore.coffee/blog/numpet/</guid>
+      <guid>https://ablazingeboy.github.io/blog/numpet/</guid>
       <description>Description The Numpet is a 4-button &amp;ldquo;macropad&amp;rdquo; that uses binary to replicate the featureset of a full number pad. This is accomplished by having each key combination read as a binary number, which then is converted into it&amp;rsquo;s decimal counterpart and sent to the computer as a keyboard input (e. g. Pressing the 1st and 4th button represents 1001 in binary, translating to the number 9). As 4 buttons can represent up to the number 15 in binary, numbers 1-9 output numbers 1-9, number 10 outputs 0 (this is to account for the fact that 0000 is the resting state of the device), and numbers 11-15 represent other functions such as Enter and Backspace.</description>
     </item>
     
